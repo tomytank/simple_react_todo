@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
+//import React, {Component} from "react";
 
-
-class TodoItems extends Component {
+class TodoItems extends React.Component {
     createTasks(item) {
         return <li key= {item.key}>{item.text}</li>
     }
