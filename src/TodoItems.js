@@ -7,7 +7,7 @@ class TodoItems extends React.Component {
     }
 
     render() {
-        const todoEntries = this.props.entries;
+        const todoEntries = this.props.entries;//passed from TodoList
         const listItems = todoEntries.map(this.createTasks);
         return (
             <ul className = "theList">
