@@ -1,7 +1,7 @@
 import React from "react";
 //import React, {Component} from "react";
 
-
+//https://5ea938770ebc1d001649091c.mockapi.io/api/d2/
 import "./TodoList.css";
 
 import TodoItems from "./TodoItems";
@@ -20,7 +20,8 @@ class TodoList extends React.Component {
         if(this._inputElement.value !=="") {
             const newItem = {
                 text: this._inputElement.value,
-                key: Date.now()
+                key: Date.now(),
+                state: ""
             };
             this.setState((prevState) => {
                 return {
