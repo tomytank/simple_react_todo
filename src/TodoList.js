@@ -1,6 +1,6 @@
 import React from "react";
 //import React, {Component} from "react";
-
+import data from "./data";
 //https://5ea938770ebc1d001649091c.mockapi.io/api/d2/
 import "./TodoList.css";
 
