@@ -10,9 +10,14 @@ class TodoItems extends React.Component {
     delete(key){
         this.props.delete(key);
     }
+    markCompleted(key){
+        console.log(this.props.markCompleted(key));
+        this.props.markCompleted(key);
+    }
     
     createTasks(item) {
         return <li onClick ={() => this.delete(item.key)} key={item.key}>{item.text}</li>
+        // return <li onClick ={() => {this.markCompleted()}} key={item.key}>{item.text}</li>
     }
 
     render() {

@@ -14,7 +14,7 @@ class TodoList extends React.Component {
         };
         this.addItem = this.addItem.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
-        this.markDeleted = this.markDeleted.bind(this);
+        this.markCompleted = this.markCompleted.bind(this);
     }
 
     addItem(e) {
@@ -33,6 +33,22 @@ class TodoList extends React.Component {
         }
         // console.log(this.state.items);
         e.preventDefault();
+    }
+    markCompleted() {
+
+        
+
+
+
+
+
+        const styleObj = {
+            textDecoration: "line-through",
+
+        }
+        console.log("Item was clicked");
+        return(styleObj);
+        // return {"text-decoration: line-through"};
     }
     deleteItem(key) {
         const filteredItems = this.state.items.filter(function (item) {
@@ -55,7 +71,8 @@ class TodoList extends React.Component {
                     </form>
                 </div>
                 <TodoItems entries={this.state.items} 
-                delete={this.deleteItem}/>
+                delete={this.deleteItem}
+                markCompleted= {this.markCompleted}/>
             </div>
         );
     }
