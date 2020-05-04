@@ -14,6 +14,7 @@ class TodoList extends React.Component {
         };
         this.addItem = this.addItem.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
+        this.markDeleted = this.markDeleted.bind(this);
     }
 
     addItem(e) {
