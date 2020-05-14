@@ -15,6 +15,7 @@ class TodoList extends React.Component {
         this.addItem = this.addItem.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
         this.markCompleted = this.markCompleted.bind(this);
+        
     }
 
     addItem(e) {
@@ -35,13 +36,6 @@ class TodoList extends React.Component {
         e.preventDefault();
     }
     markCompleted() {
-
-        
-
-
-
-
-
         const styleObj = {
             textDecoration: "line-through",
 
